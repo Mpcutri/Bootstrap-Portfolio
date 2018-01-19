@@ -1,0 +1,31 @@
+#headshot {
+    position: relative;
+    height: 100%;
+    width: 120%;
+    margin-right: -140px;
+}
+
+#aboutme {
+	padding-top: 30px;
+	vertical-align: middle;
+}
+
+.content-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+@media screen and (max-width: 991px){
+
+	#headshot {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+	}
+
+	#aboutme {
+		padding-top: 0;
+		padding-bottom: 1.0rem;
+	}
+}
+
