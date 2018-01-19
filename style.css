@@ -8,6 +8,7 @@
 #aboutme {
 	padding-top: 30px;
 	vertical-align: middle;
+	font-size: 18px;
 }
 
 .content-section {
@@ -26,6 +27,7 @@
 	#aboutme {
 		padding-top: 0;
 		padding-bottom: 1.0rem;
+
 	}
 }
 
