@@ -56,15 +56,16 @@ h2 {
   cursor: pointer;
   color: white;
   font-size: 30px;
-  -webkit-transition: font-size .5s linear, color .5s linear;
-  -moz-transition: font-size .5s linear, color .5s linear;
-  -o-transition: font-size .5s linear, color .5s linear;
-  transition: font-size .5s linear, color .5s linear;
+  -webkit-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -moz-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -o-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  transition: font-size .5s linear, color .5s linear, transform .5s linear;
 }
 
 #github-button:hover .icon-social-github {
   color: #2b2b2b;
-  font-size: 50px
+  font-size: 50px;
+  transform: rotate(360deg);
 }
 
 #linked-in-icon {
@@ -75,15 +76,16 @@ h2 {
 .fa-linkedin {
   color: white;
   font-size: 30px;
-  -webkit-transition: font-size .5s linear, color .5s linear;
-  -moz-transition: font-size .5s linear, color .5s linear;
-  -o-transition: font-size .5s linear, color .5s linear;
-  transition: font-size .5s linear, color .5s linear;
+  -webkit-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -moz-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -o-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  transition: font-size .5s linear, color .5s linear, transform .5s linear;
 }
 
 #linked-in-icon:hover .fa-linkedin {
   color: #2b2b2b;
   font-size: 50px;
+  transform: rotate(-360deg);
 }
 
 #contact-text {
@@ -97,15 +99,16 @@ h2 {
 .fa-envelope {
   color: white;
   font-size: 30px;
-  -webkit-transition: font-size .5s linear, color .5s linear;
-  -moz-transition: font-size .5s linear, color .5s linear;
-  -o-transition: font-size .5s linear, color .5s linear;
-  transition: font-size .5s linear, color .5s linear;
+  -webkit-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -moz-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  -o-transition: font-size .5s linear, color .5s linear, transform .5s linear;
+  transition: font-size .5s linear, color .5s linear, transform .5s linear;
 }
 
 #contact-button:hover .fa-envelope {
   color: #2b2b2b;
   font-size: 50px;
+  transform: rotate(360deg);
 }
 
 #headshot {
