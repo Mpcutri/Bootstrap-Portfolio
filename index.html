@@ -54,7 +54,7 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#pizza">Pizza?</a>
         </li>
-        <li id="contact-text" class="sidebar-nav-item" data-toggle="modal" data-target="#exampleModal">
+        <li id="contact-text" class="sidebar-nav-item" data-toggle="modal" data-target="#contact-modal">
           <a class="js-scroll-trigger">Contact</a>
         </li>
       </ul>
@@ -64,19 +64,19 @@
         <ul class="list-inline mb-5">
 
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" id="contact-button" href="#">
+            <a class="social-link rounded-circle text-white mr-3" id="contact-button" data-toggle="modal" data-target="#contact-modal">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
 
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/Mpcutri" target="_blank">
+            <a class="social-link rounded-circle text-white" id="github-button" href="https://github.com/Mpcutri" target="_blank">
               <i class="icon-social-github"></i>
             </a>
           </li>
 
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maxwellcutri/" target="_blank">
+            <a id="linked-in-icon" class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maxwellcutri/" target="_blank">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </li>
@@ -87,7 +87,7 @@
     </nav>
 
     <!-- Contact Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
