@@ -1,3 +1,18 @@
+// custom JavaScript
+var email = document.getElementById("emailID").value;
+
+var subject = ('My permanent subject line');
+
+var body = ('My permanent body contents');
+
+document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
+
+
+
+
+// end custom javascript
+
+
 (function($) {
   "use strict"; // Start of use strict
 

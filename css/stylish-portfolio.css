@@ -47,9 +47,17 @@ h2 {
 
 .icons {
   bottom: 0;
-  right: 70px;
+  right: 60px;
   position: absolute;
   font-size: 30px;
+}
+
+#contact-text {
+  cursor: pointer;
+}
+
+#contact-text:hover {
+  color: white;
 }
 
 .text-faded {

@@ -11,6 +11,9 @@
 
     <title>Maxwell Cutri's Digital Portfolio</title>
 
+    <!-- New Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -49,10 +52,13 @@
           <a class="js-scroll-trigger" href="#portfolio">Projects</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
+          <a class="js-scroll-trigger" href="#pizza">Pizza?</a>
+        </li>
+        <li id="contact-text" class="sidebar-nav-item" data-toggle="modal" data-target="#exampleModal">
+          <a class="js-scroll-trigger">Contact</a>
         </li>
       </ul>
-  
+
       <!-- bottom section for icons -->
       <div class="icons">
         <ul class="list-inline mb-5">
@@ -63,8 +69,8 @@
           </li>
 
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://stackoverflow.com/users/9182384/maxwell-cutri" target="_blank">
-              <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+            <a class="social-link rounded-circle text-white mr-3" id="contact-button" href="#">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
 
@@ -77,6 +83,46 @@
       </div>
 
     </nav>
+
+    <!-- Contact Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Full Name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Company</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email Address</label>
+                    <input type="email" class="form-control" id="emailID" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message:</label>
+                    <textarea class="form-control" id="subject-line" rows="1" placeholder="Subject"></textarea>
+                    <textarea class="form-control" id="message-body" rows="3"></textarea>
+                  </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="email-send" type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
 
     <!-- Header -->
     <header class="masthead d-flex">
@@ -217,7 +263,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="content-section bg-primary text-white">
+    <section id="pizza" class="content-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">Hungry for Pizza?</h2>
         <h3>Here are a couple of my favorite local spots:</h3>
@@ -266,9 +312,15 @@
       <i class="fa fa-angle-up"></i>
     </a>
 
+    <!-- Materialize -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
