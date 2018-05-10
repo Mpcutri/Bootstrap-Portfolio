@@ -52,7 +52,7 @@ h2 {
   font-size: 30px;
 }
 
-.icon-social-github {
+.icon-social-github#icon-social-github {
   cursor: pointer;
   color: white;
   font-size: 30px;
@@ -62,7 +62,7 @@ h2 {
   transition: font-size .5s linear, color .5s linear, transform .5s linear, margin .5s linear;
 }
 
-#github-button:hover .icon-social-github {
+#github-button:hover #icon-social-github {
   color: #2b2b2b;
   font-size: 50px;
   transform: rotate(360deg);
@@ -404,7 +404,7 @@ a {
 .text-secondary {
   color: #ecb807 !important; }
 
-
+/*
 @media screen and (min-width: 2000px) {
   #headshot {
     min-width: 100%;
@@ -416,9 +416,10 @@ a {
 @media screen and (max-width: 1999px) and (min-width: 992px) {
   #headshot {
     position: relative;
-    height: 75%;
-    width: 120%;
-    margin-top: 20px;
-    margin-left: -60px;
+    height: 60% !important;
+    width: 100% !important;
+    margin-top: 130px;
+    margin-left: -150px;
   }
 }
+*/
