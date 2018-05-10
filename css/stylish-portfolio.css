@@ -52,6 +52,10 @@ h2 {
   font-size: 30px;
 }
 
+.icon-social-github:hover {
+  border-bottom: none;
+}
+
 #contact-text {
   cursor: pointer;
 }
@@ -63,6 +67,7 @@ h2 {
 #subject-line {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  border-bottom: none;
 }
 
 #message-body {
