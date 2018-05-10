@@ -403,3 +403,22 @@ a {
 
 .text-secondary {
   color: #ecb807 !important; }
+
+
+@media screen and (min-width: 2000px) {
+  #headshot {
+    min-width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1999px) and (min-width: 992px) {
+  #headshot {
+    position: relative;
+    height: 75%;
+    width: 120%;
+    margin-top: 20px;
+    margin-left: -60px;
+  }
+}
