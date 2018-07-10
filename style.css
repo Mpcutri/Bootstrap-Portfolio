@@ -1,8 +1,5 @@
 #headshot {
-    position: relative;
-    height: 100%;
-    width: 120%;
-    margin-right: -140px;
+	width: 100%
 }
 
 #aboutme {
@@ -18,16 +15,36 @@
 
 @media screen and (max-width: 991px){
 
-	#headshot {
-		height: 100%;
-		width: 100%;
-		margin: auto;
-	}
-
 	#aboutme {
 		padding-top: 0;
 		padding-bottom: 1.0rem;
-
 	}
+}
+
+@media screen and (min-width: 1200px) {
+	#headshot {
+		width: 150%;
+		margin-top: 5%;
+	}
+}
+
+@media screen and (min-width: 981px) and (max-width: 1199px) {
+  #headshot {
+    position: relative;
+    width: 130%;
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+	#headshot {
+    	margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
 }
 
