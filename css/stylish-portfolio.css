@@ -141,7 +141,22 @@ h2 {
 
 /* Map */
 .map {
-  height: 30rem; }
+  height: 30rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 640px) {
+  .map {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 50%; 
+  } 
+  .map iframe {
+    width: 100vw; 
+  }
+}
 
 @media (max-width: 992px) {
   .map {
@@ -348,6 +363,30 @@ h2 {
 }
 
 #avalanche-box:hover #avalanche{
+  visibility: visible;
+}
+
+#ikigai-text {
+  visibility: hidden;
+}
+
+#ikigai-movement:hover #ikigai-text{
+  visibility: visible;
+}
+
+#modern-text {
+  visibility: hidden;
+}
+
+#modern-in-denver:hover #modern-text{
+  visibility: visible;
+}
+
+#gotchu-text {
+  visibility: hidden;
+}
+
+#gotchu:hover #gotchu-text{
   visibility: visible;
 }
 
