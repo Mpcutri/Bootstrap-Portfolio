@@ -92,6 +92,10 @@ h2 {
   margin-right: -10px;
 }
 
+#contact {
+  background: url("../img/dust_scratches.png");
+}
+
 #contact-text {
   cursor: pointer;
 }
@@ -143,8 +147,12 @@ h2 {
 .map {
   height: 30rem;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 60px;
+}
+
+.map iframe {
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0 40px -10px rgba(0,0,0,1);
+  box-shadow: 0 0 40px -10px rgba(0,0,0,1);
 }
 
 @media screen and (max-width: 640px) {
@@ -189,11 +197,12 @@ h2 {
   position: relative;
   display: table;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/coffee1.jpg");
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .masthead h1 {
@@ -299,7 +308,8 @@ h2 {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/couple.jpg");
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -308,6 +318,10 @@ h2 {
     font-weight: 700;
     display: block;
     max-width: 30rem; }
+
+#portfolio {
+  background: url("../img/dust_scratches.png");
+}
 
 .portfolio-item {
   display: block;
@@ -390,8 +404,12 @@ h2 {
   visibility: visible;
 }
 
+.footer {
+  background: url("../img/dust_scratches.png");
+}
+
 footer.footer {
-  padding-top: 5rem;
+  padding-top: 15rem;
   padding-bottom: 5rem; }
   footer.footer .social-link {
     display: block;

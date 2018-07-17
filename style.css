@@ -2,10 +2,28 @@
 	width: 100%
 }
 
+#about {
+	position: relative;
+	-webkit-box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
+	box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
+	background: url("./img/dust_scratches.png");
+}
+
 #aboutme {
 	padding-top: 30px;
 	vertical-align: middle;
 	font-size: 18px;
+}
+
+#linked-in-image img {
+	-webkit-transition: transform 1s; /* Safari */
+    transition: transform 1s;
+    -webkit-box-shadow: 0 0 40px -10px rgba(0,0,0,1);
+    box-shadow: 0 0 40px -10px rgba(0,0,0,1);
+}
+
+#linked-in-image img:hover {
+	transform: scale(1.25);
 }
 
 .content-section {
