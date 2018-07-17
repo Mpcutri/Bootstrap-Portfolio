@@ -7,12 +7,24 @@
 	-webkit-box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
 	box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
 	background: url("./img/dust_scratches.png");
+	border-top: solid;
+    border-color: gray;
+    border-width: 1px;
 }
 
 #aboutme {
 	padding-top: 30px;
 	vertical-align: middle;
 	font-size: 18px;
+}
+
+#services {
+	position: relative;
+	-webkit-box-shadow: 0 5px 30px -10px rgba(0,0,0,1);
+	box-shadow: 0 5px 30px -10px rgba(0,0,0,1);
+	border-bottom: solid;
+    border-width: 1px;
+    border-color: #17637b;
 }
 
 #linked-in-image img {
@@ -29,6 +41,134 @@
 .content-section {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+}
+
+#pizza {
+	position: relative;
+	height: 365px;
+	border-bottom: solid;
+	border-top: solid;
+    border-width: 1px;
+    border-color: #17637b;
+    -webkit-box-shadow: inset 0 0 40px -10px rgba(0,0,0,1);
+    box-shadow: inset 0 0 40px -10px rgba(0,0,0,1);
+}
+
+#pizza-text {
+	width: 100%;
+	text-align: center;
+}
+
+#bluepan {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#marquis {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#locale {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding-top: 10px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#pizza-icon1 {
+	transition: all 1s;
+	display: inline-block;
+}
+
+#pizza-icon1:hover ~ #pizza-text #bluepan {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#pizza-icon1 img {
+	padding: 10px;
+	transition: transform 1s;
+	background: transparent;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+	transform: translatey(0px);
+	animation: float 5.5s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+#pizza-icon2 {
+	display: inline-block;
+}
+
+#pizza-icon2 img {
+	padding: 10px;
+	transition: transform 1s;
+	background: transparent;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+#pizza-icon2:hover ~ #pizza-text #marquis {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#pizza-icon3 {
+	display: inline-block;
+}
+
+#pizza-icon3 img {
+	padding: 10px;
+	transition: transform 1s;
+	background: transparent;
+	overflow: hidden;
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);
+	transform: translatey(0px);
+	animation: float 6.5s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+#pizza-icon3:hover ~ #pizza-text #locale {
+	opacity: 1;
+	cursor: pointer;
+}
+
+@keyframes float {
+	0% {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+		transform: translatey(0px);
+	}
+	50% {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+		transform: translatey(-20px);
+	}
+	100% {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+		transform: translatey(0px);
+	}
 }
 
 @media screen and (max-width: 991px){

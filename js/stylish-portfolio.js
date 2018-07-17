@@ -7,8 +7,7 @@ var body = ('My permanent body contents');
 
 document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body+ '">' + 'Click here to send email as well' + '<'+'/a>');
 
-
-
+ 
 
 // end custom javascript
 
@@ -55,6 +54,25 @@ document.write('<a href="mailto:' + email + '?subject=' +subject+ '&body=' +body
     }
   });
 
+//    $('#bluepan').hide()
+//   $('#marquis').hide()
+
+// $('#pizza-icon1 > img').mouseover(
+//   function() {
+//     console.log("HOVERING!!!!!");
+//     $('#bluepan').show();
+//   },function(){
+//     $('#bluepan').hide();
+// });
+
+// $('#pizza-icon2 > img').mouseover(
+//   function() {
+//     console.log("HOVERING 2!!!!!");
+//     $('#marquis').show();
+//   },function(){
+//     $('#marquis').hide();
+// });
+
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling
@@ -77,3 +95,7 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
+//Hover of pizza icons
+
+

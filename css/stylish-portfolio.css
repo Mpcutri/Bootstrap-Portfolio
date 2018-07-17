@@ -321,6 +321,15 @@ h2 {
 
 #portfolio {
   background: url("../img/dust_scratches.png");
+  -webkit-box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
+  box-shadow: 0 -5px 30px -10px rgba(0,0,0,1);
+  border-top: solid;
+  border-color: gray;
+  border-width: 1px;
+}
+
+#wordpress {
+   background: url("../img/dust_scratches.png");
 }
 
 .portfolio-item {
@@ -373,35 +382,39 @@ h2 {
         clip-path: inset(1rem); } }
 
 #avalanche {
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 #avalanche-box:hover #avalanche{
-  visibility: visible;
+  opacity: 1;  
 }
 
 #ikigai-text {
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-#ikigai-movement:hover #ikigai-text{
-  visibility: visible;
+#ikigai-movement:hover #ikigai-text {
+  opacity: 1;
 }
 
 #modern-text {
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 #modern-in-denver:hover #modern-text{
-  visibility: visible;
+  opacity: 1;
 }
 
 #gotchu-text {
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-#gotchu:hover #gotchu-text{
-  visibility: visible;
+#gotchu:hover #gotchu-text {
+  opacity: 1;
 }
 
 .footer {
