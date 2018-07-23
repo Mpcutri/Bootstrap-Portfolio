@@ -215,6 +215,11 @@ h2 {
       height: 100vh; }
       .masthead h1 {
         font-size: 5.5rem; } }
+  @media screen and (max-width: 640px) {
+    .masthead {
+      background-attachment: unset;
+    }
+  }
 
 /* Side Menu */
 #sidebar-wrapper {
@@ -318,6 +323,12 @@ h2 {
     font-weight: 700;
     display: block;
     max-width: 30rem; }
+
+@media screen and (max-width: 640px) {
+    .callout {
+      background-attachment: unset;
+    }
+  }
 
 #portfolio {
   background: url("../img/dust_scratches.png");
