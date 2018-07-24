@@ -1,3 +1,18 @@
+#resume-modal img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+#resume-modal img:active {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+#resume-img {
+	width: 100%;
+}
+
 #headshot {
 	width: 100%
 }

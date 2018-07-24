@@ -52,7 +52,7 @@
           <a class="js-scroll-trigger" href="#portfolio">Projects</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#pizza">The Pizza Corner</a>
+          <a class="js-scroll-trigger" href="#pizza">Pizza!</a>
         </li>
         <li id="contact-text" class="sidebar-nav-item" data-toggle="modal" data-target="#contact-modal">
           <a class="js-scroll-trigger">Contact</a>
@@ -70,14 +70,8 @@
           </li>
 
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" id="github-button" href="https://github.com/Mpcutri" target="_blank">
-              <i class="icon-social-github" id="icon-social-github"=></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a id="linked-in-icon" class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maxwellcutri/" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a class="social-link rounded-circle text-white mr-3" id="resume-button" data-toggle="modal" data-target="#resume-modal" target="_blank">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
           </li>
 
@@ -97,34 +91,50 @@
               </button>
             </div>
             <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Full Name</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1">Company</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="">
-                  </div>
-                  <div class="form-group">
+                <form method="GET" action="mailto:maxwell.cutri@gmail.com">
+                  
+
                     <label for="exampleFormControlInput1">Email Address</label>
                     <input type="email" class="form-control" id="emailID" placeholder="name@example.com">
-                  </div>
+
+
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message:</label>
-                    <input class="form-control" id="subject-line" rows="1" placeholder="Subject"></input>
-                    <textarea class="form-control" id="message-body" rows="3"></textarea>
+                    <input name="subject" type="text" class="form-control" id="subject-line" rows="1" placeholder="Subject">
+                    </input>
+                    <textarea name="body" value="Body" class="form-control" id="message-body" rows="3"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button id="email-send" name="submit" value="Submit" type="submit" class="btn btn-primary">Send</button>
                   </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button id="email-send" type="button" class="btn btn-primary">Send</button>
             </div>
           </div>
         </div>
       </div>
   
+      <!-- Resume Modal -->
+      <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Resume</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img id="resume-img" src="./img/resume.jpg" />
+            </div>
+            <div class="modal-footer">
+              <a href="/images/MCutri_Resume_Interactive.pdf" download>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Download PDF
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Header -->
     <header class="masthead d-flex">
@@ -144,7 +154,7 @@
               I consistently work in JavaScript, React.js, HTML5, and CSS to develop web applications while utilizing either MongoDB or MySQL for database integration. Beside complex programming languages, I am well-versed in Adobe Creative Suite, Wordpress, photography, ad tracking, and digital operations. I am always striving to enrich my professional growth in web development and fine tuning my skills in photo editing and vector drawing software.
               <br>
               <br>
-              While I'm not working, you can catch me at any of the parks around Denver playing soccer, volleyball, frisbee, or just biking around.  Otherwise, I'm planning trips to get out and see new sites, experience new food, and get better at surfing.
+              While I'm not working, you can catch me at any of the parks around Denver playing soccer, volleyball, frisbee, or just biking around.  Otherwise, I'm planning trips to get out and see new sites, experience great food, and get my adrenaline up!
               <br>
               ( ͡° ͜ʖ ͡°)
              <!--  Hello there, and welcome to my digital portfolio! My name is Maxwell Cutri and I am currently a student in the Front-End Web Development Bootcamp at the University of Denver.  This page will be equiped with my most recent work in web development, as well as a glimpse into the professional servies I can provide. I'll be adding more projects into my portfolio page, along with plenty of resources pertaining to my work.
