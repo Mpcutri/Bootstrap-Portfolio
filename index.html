@@ -1,292 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/wordMarkFinalColor.png">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="">
+  <meta name="author"
+    content="">
+  <link rel="icon"
+    type="image/png"
+    href="img/wordMarkFinalColor.png">
 
-    <title>Maxwell Cutri's Digital Portfolio</title>
+  <title>Maxwell Cutri's Digital Portfolio</title>
 
-    <!-- New Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- New Bootstrap -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css"
+    rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet"
+    type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css"
+    rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css"
+    rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet"
+    type="text/css"
+    href="style.css">
 
-  </head>
+</head>
 
-  <body id="page-top">
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Welcome!</a>
+<body id="page-top">
+  <!-- Navigation -->
+  <a class="menu-toggle rounded"
+    href="#">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger"
+          href="#page-top">Welcome!</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger"
+          href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger"
+          href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger"
+          href="#services">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger"
+          href="#portfolio">Projects</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger"
+          href="#pizza">Pizza!</a>
+      </li>
+      <li id="contact-text"
+        class="sidebar-nav-item"
+        data-toggle="modal"
+        data-target="#contact-modal">
+        <a class="js-scroll-trigger">Contact</a>
+      </li>
+    </ul>
+
+    <!-- bottom section for icons -->
+    <div class="icons">
+      <ul class="list-inline mb-5">
+
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3"
+            id="contact-button"
+            data-toggle="modal"
+            data-target="#contact-modal">
+            <i class="fa fa-envelope"
+              aria-hidden="true"></i>
+          </a>
         </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
+
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3"
+            id="resume-button"
+            data-toggle="modal"
+            data-target="#resume-modal"
+            target="_blank">
+            <i class="fa fa-file-text-o"
+              aria-hidden="true"></i>
+          </a>
         </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Projects</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#pizza">Pizza!</a>
-        </li>
-        <li id="contact-text" class="sidebar-nav-item" data-toggle="modal" data-target="#contact-modal">
-          <a class="js-scroll-trigger">Contact</a>
-        </li>
+
       </ul>
+    </div>
 
-      <!-- bottom section for icons -->
-      <div class="icons">
-        <ul class="list-inline mb-5">
+  </nav>
 
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" id="contact-button" data-toggle="modal" data-target="#contact-modal">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </li>
-
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" id="resume-button" data-toggle="modal" data-target="#resume-modal" target="_blank">
-              <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
-
-    </nav>
-
-    <!-- Contact Modal -->
-      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form method="GET" action="mailto:maxwell.cutri@gmail.com">
-                  
-
-                    <label for="exampleFormControlInput1">Email Address</label>
-                    <input type="email" class="form-control" id="emailID" placeholder="name@example.com">
-
-
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message:</label>
-                    <input name="subject" type="text" class="form-control" id="subject-line" rows="1" placeholder="Subject">
-                    </input>
-                    <textarea name="body" value="Body" class="form-control" id="message-body" rows="3"></textarea>
-                  </div>
-                  <div class="modal-footer">
-                    <button id="email-send" name="submit" value="Submit" type="submit" class="btn btn-primary">Send</button>
-                  </div>
-                </form>
-            </div>
-          </div>
+  <!-- Contact Modal -->
+  <div class="modal fade"
+    id="contact-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog"
+      role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"
+            id="exampleModalLabel">Contact Form</h5>
+          <button type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </div>
-  
-      <!-- Resume Modal -->
-      <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Resume</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <img id="resume-img" src="./img/resume.jpg" />
+        <div class="modal-body">
+          <form method="GET"
+            action="mailto:maxwell.cutri@gmail.com">
+
+
+            <label for="exampleFormControlInput1">Email Address</label>
+            <input type="email"
+              class="form-control"
+              id="emailID"
+              placeholder="name@example.com">
+
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message:</label>
+              <input name="subject"
+                type="text"
+                class="form-control"
+                id="subject-line"
+                rows="1"
+                placeholder="Subject">
+              </input>
+              <textarea name="body"
+                value="Body"
+                class="form-control"
+                id="message-body"
+                rows="3"></textarea>
             </div>
             <div class="modal-footer">
-              <a href="/images/MCutri_Resume_Interactive.pdf" download>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Download PDF
-                </button>
-              </a>
+              <button id="email-send"
+                name="submit"
+                value="Submit"
+                type="submit"
+                class="btn btn-primary">Send</button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
+    </div>
+  </div>
 
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container text-center my-auto">
+  <!-- Resume Modal -->
+  <div class="modal fade"
+    id="resume-modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog"
+      role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"
+            id="exampleModalLabel">Resume</h5>
+          <button type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="resume-img"
+            src="./img/resume.jpg" />
+        </div>
+        <div class="modal-footer">
+          <a href="./img/MCutri_2019.pdf" download="MCutri_Resume_2019">
+            <button type="button"
+              class="btn btn-secondary">Download PDF
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
       <div class="overlay"></div>
-    </header>
+  </header>
 
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-5">
-             <p id="aboutme">
-              Hello there, and welcome to my digital portfolio! My name is Maxwell Cutri, and I am a Full-Stack Web Developer certified through the University of Denver, and a graduate from Syracuse University with a Bachelor of Science in Biology.
-              <br>
-              <br>
-              I consistently work in JavaScript, React.js, HTML5, and CSS to develop web applications while utilizing either MongoDB or MySQL for database integration. Beside complex programming languages, I am well-versed in Adobe Creative Suite, Wordpress, photography, ad tracking, and digital operations. I am always striving to enrich my professional growth in web development and fine tuning my skills in photo editing and vector drawing software.
-              <br>
-              <br>
-              While I'm not working, you can catch me at any of the parks around Denver playing soccer, volleyball, frisbee, or just biking around.  Otherwise, I'm planning trips to get out and explore somewhere new, experience new cuisine, and to push myself into a active and motivated lifestyle.
-             <!--  Hello there, and welcome to my digital portfolio! My name is Maxwell Cutri and I am currently a student in the Front-End Web Development Bootcamp at the University of Denver.  This page will be equiped with my most recent work in web development, as well as a glimpse into the professional servies I can provide. I'll be adding more projects into my portfolio page, along with plenty of resources pertaining to my work.
+  <!-- About -->
+  <section class="content-section bg-light"
+    id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-5">
+          <p id="aboutme">
+            
+            Hello there, and welcome to my digital portfolio!
+            <br>
+            <br>
+            I am a Front End Developer with the experience and tools to work across design and tech teams. Whether turning user-driven wireframes into code, working directly with designers to create intuitive web applications, or gathering business requirements and documentation for new technologies, I am an adaptable design enthusiast with development expertise.
+            <br>
+            <br>
+            My primary focus is front-end technologies (HTML5/CSS/JS), while the front-end frameworks I typically use are AngularJs (1.5), React, and Vue.js. I understand the versatility of different programming languages and how their applications can best be suited for specific project goals. I am also familiar with backend tech such as Node.js, MySQL and MongoDB.
+            <br>
+            <br>
+            I continue my professional growth daily in web development, and spend a good amount of free time fine-tuning my skills with photo editing and vector drawing software. The Adobe Creative Suite is my favorite digital playground. Beyond that, I love cooking, sports with friends at the park, botany (at home and at the office), snowboarding, and pursuing a motivated and active lifestyle!
+<!--             
+            I am a Front End Developer with the experience and tools to work smoothly across design and tech teams.
+            Whether generating client-driven compositions and actualizing them into code, or working directly with
+            designers to create intuitive wireframes, I am an adaptable design enthusiast with development expertise.
+            <br>
+            <br>
+            I consistently work in JavaScript, React.js, HTML5 and CSS to develop web applications while having work
+            experience in Angular 1.5 and VueJS. I understand the versatility of different programming languages and how
+            their applications can best be suited for specific project goals.
+            <br>
+            <br>
+            Beside complex programming languages, I am well-versed in Adobe Creative Suite, business analytics,
+            Wordpress, ad tracking, and digital operations. I continue my professional growth daily in web development
+            as well as fine-tune my skills with photo editing and vector drawing software.
+            <br>
+            <br>
+            While I'm not working, you can catch me snowboarding or at any of the parks around Denver playing soccer, volleyball,
+            frisbee, or just biking around. Otherwise, I'm planning trips to get out and explore somewhere new,
+            experience new cuisine, and to push myself into an active and motivated lifestyle. -->
+            <!--  Hello there, and welcome to my digital portfolio! My name is Maxwell Cutri and I am currently a student in the Front-End Web Development Bootcamp at the University of Denver.  This page will be equiped with my most recent work in web development, as well as a glimpse into the professional servies I can provide. I'll be adding more projects into my portfolio page, along with plenty of resources pertaining to my work.
             <br>
             <br>
               Beside complex programming language, I am well-versed in Adobe Creative Suite, Wordpress, photography, ad tracking, and digital operations. I plan to continue working hard and developing more valuable skills to bring to the professional workforce.</p> -->
-          </div>
-          <div class="col-lg-1">
-          </div>
-          <div class="col-lg-6">
-            <img id="headshot" src="img/Headshot.jpg">
-          </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-6">
+          <img id="headshot"
+            src="img/Headshot.jpg">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">How Can I Help?</h2>
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center"
+    id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">How Can I Help?</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Responsive Layouts</strong>
+          </h4>
+          <p class="text-faded mb-0">Sites and apps that look great on any screen size.</p>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
-            <h4>
-              <strong>Responsive Layouts</strong>
-            </h4>
-            <p class="text-faded mb-0">Sites and apps that look great on any screen size.</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Redesigned Branding</strong>
-            </h4>
-            <p class="text-faded mb-0">Helping you redifine your brand into what it deserves to be.</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-umbrella"></i>
-            </span>
-            <h4>
-              <strong>Tech Support</strong>
-            </h4>
-            <p class="text-faded mb-0">Ready to help and troubleshoot your digital inquiries.</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-            <h4>
-              <strong>Results</strong>
-            </h4>
-            <p class="text-faded mb-0">Dedicated and reliable quality to bring professional results.</p>
-          </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Redesigned Branding</strong>
+          </h4>
+          <p class="text-faded mb-0">Helping you redefine your brand into what it deserves to be.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-umbrella"></i>
+          </span>
+          <h4>
+            <strong>Tech Support</strong>
+          </h4>
+          <p class="text-faded mb-0">Ready to help and troubleshoot your digital inquiries.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Results</strong>
+          </h4>
+          <p class="text-faded mb-0">Dedicated and reliable quality to bring professional results.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Callout -->
-    <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">Explore Previous Work Experience And Our Mutual Connections.</h2>
-        <a id="linked-in-image" href="https://www.linkedin.com/in/maxwellcutri/" target="_blank">
-          <img height="125px" width="125px" src="./img/linkedin.png" />
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Explore Previous Work Experience And Our Mutual Connections.</h2>
+      <a id="linked-in-image"
+        href="https://www.linkedin.com/in/maxwellcutri/"
+        target="_blank">
+        <img height="125px"
+          width="125px"
+          src="./img/linkedin.png" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Freelance -->
+  <section class="content-section"
+    id="portfolio">
+  <section class="content-section"
+    id="wordpress">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Freelance Work</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-lg-6"
+          id="modern-in-denver">
+          <a class="portfolio-item"
+            href="https://www.coloradoenterprisefund.org/"
+            target="_blank">
+            <span class="caption">
+              <span class="caption-content"
+                id="modern-text">
+                <h2>Colorado Enterprise Fund</h2>
+                <p class="mb-0">Helping small business make it big since 1976</p>
+              </span>
+            </span>
+            <img id="mid-img"
+              class="img-fluid"
+              src="img/CEF.jpg"
+              alt="">
+          </a>
+      </div>
+
+      <div class="col-lg-6"
+            id="modern-in-denver">
+            <a class="portfolio-item"
+              href="https://trumpet-flute-wrnp.squarespace.com/"
+              target="_blank">
+              <span class="caption">
+                <span class="caption-content"
+                  id="modern-text">
+                  <h2>Art for Wellbeing Everywhere</h2>
+                  <p class="mb-0">Enriching lives through creative expression and aesthetic experience</p>
+                </span>
+              </span>
+              <img id="mid-img"
+                class="img-fluid"
+                src="img/AWE.jpg"
+                alt="">
+            </a>
+          </div>
+        </div>
+      
+      <div class="row no-gutters">
+      <div class="col-lg-6"
+        id="ikigai-movement">
+        <a class="portfolio-item"
+          href="https://ikigaiglobalwellness.com/"
+          target="_blank">
+          <span class="caption">
+            <span class="caption-content"
+              id="ikigai-text">
+              <h2>Ikigai Global Wellness</h2>
+              <p class="mb-0">Your Journey to Redefining Success Starts Here!</p>
+            </span>
+          </span>
+          <img class="img-fluid"
+            src="img/Ikigai.jpg"
+            alt="">
         </a>
       </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Projects</h3>
-          <h2 class="mb-5">Recent Work</h2>
+      
+        <div class="col-lg-6"
+          id="modern-in-denver">
+          <a class="portfolio-item"
+            href="https://www.modernindenver.com/"
+            target="_blank">
+            <span class="caption">
+              <span class="caption-content"
+                id="modern-text">
+                <h2>Modern In Denver</h2>
+                <p class="mb-0">Colorado's Design Magazine</p>
+              </span>
+            </span>
+            <img id="mid-img"
+              class="img-fluid"
+              src="img/MID1.png"
+              alt="">
+          </a>
         </div>
 
-        <div class="row no-gutters">
-        <div class="col-lg-6" id="avalanche-box">
-            <a class="portfolio-item" href="https://powerful-basin-78114.herokuapp.com/" target="_blank">
-              <span class="caption">
-                <span class="caption-content" id="avalanche">
-                  <h2>Avalanche</h2>
-                  <p class="mb-0">Can you escape the freezing grasp of the Rocky Mountain Wilderness?</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/AvalanchePort.gif" alt="">
-            </a>
-          </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://secret-brushlands-83902.herokuapp.com/" target="_blank">
-              <span class="caption" style="text-align: right;">
-                <span class="caption-content">
-                  <h2>On Tap Colorado (In Progress)</h2>
-                  <p class="mb-0">Your up-to-date source for local beers on tap.</p>
-                </span>
+  <!-- Portfolio -->
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Ground-Up Development</h3>
+        <h2 class="mb-5">Tech Projects</h2>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-lg-6"
+          id="avalanche-box">
+          <a class="portfolio-item"
+            href="https://powerful-basin-78114.herokuapp.com/"
+            target="_blank">
+            <span class="caption">
+              <span class="caption-content"
+                id="avalanche">
+                <h2>Avalanche</h2>
+                <p class="mb-0">Can you escape the freezing grasp of the Rocky Mountain Wilderness?</p>
+                <p class="mb-0">(JavaScript, Anime.js, Handlebars, HTML, CSS)</p>
               </span>
-              <img class="img-fluid" src="img/onTapPortfolio.jpg" alt="">
-            </a>
-          </div>
+            </span>
+            <img class="img-fluid"
+              src="img/AvalanchePort.gif"
+              alt="">
+          </a>
         </div>
-          
-          <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://elliotreed.github.io/AudioSauce/" target="_blank">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Audio Sauce (Technical Issue - Resolving)</h2>
-                  <p class="mb-0">Sync your mood with Mother Nature.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/AudioSaucePortfolio.jpg" alt="">
-            </a>
-          </div>
 
-          <div class="col-lg-6" id="gotchu">
-            <a class="portfolio-item" href="https://gotchu.herokuapp.com/" target="_blank">
-              <span class="caption">
-                <span class="caption-content" id="gotchu-text">
-                  <h2>Gotchu (In Progress)</h2>
-                  <p class="mb-0">Simple, Substantial Social Change.</p>
-                </span>
+        <div class="col-lg-6">
+          <a class="portfolio-item"
+            href="https://secret-brushlands-83902.herokuapp.com/"
+            target="_blank">
+            <span class="caption"
+              style="text-align: right;">
+              <span class="caption-content">
+                <h2>On Tap Colorado (In Progress)</h2>
+                <p class="mb-0">Your up-to-date source for local beers on tap.</p>
+                <p class="mb-0">(React.js, JavaScript, JSX, CSS, HTML)</p>
               </span>
-              <img class="img-fluid" src="img/gotchu.jpg" alt="">
-            </a>
-          </div>
+            </span>
+            <img class="img-fluid"
+              src="img/onTapPortfolio.jpg"
+              alt="">
+          </a>
+        </div>
+      </div>
 
-          <!-- <div class="col-lg-6">
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item"
+            href="https://elliotreed.github.io/AudioSauce/"
+            target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Audio Sauce (Technical Issue - Resolving)</h2>
+                <p class="mb-0">Sync your mood with Mother Nature.</p>
+                <p class="mb-0">(JavaScript, HTML, CSS)</p>
+              </span>
+            </span>
+            <img class="img-fluid"
+              src="img/AudioSaucePortfolio.jpg"
+              alt="">
+          </a>
+        </div>
+
+        <div class="col-lg-6"
+          id="gotchu">
+          <a class="portfolio-item"
+            href="https://gotchu.herokuapp.com/"
+            target="_blank">
+            <span class="caption">
+              <span class="caption-content"
+                id="gotchu-text">
+                <h2>Gotchu (Concept Pitch)</h2>
+                <p class="mb-0">Simple, Substantial Social Change.</p>
+                <p class="mb-0">(React.js, JavaScript, JSX, CSS, HTML)</p>
+              </span>
+            </span>
+            <img class="img-fluid"
+              src="img/gotchu.jpg"
+              alt="">
+          </a>
+        </div>
+
+        <!-- <div class="col-lg-6">
             <a class="portfolio-item" href="https://mario-click.herokuapp.com/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
@@ -295,153 +517,144 @@
               <img class="img-fluid" src="img/marioShuffle1.jpg" alt="">
             </a>
           </div> -->
-          
 
-        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Wordpress -->
-    <section class="content-section" id="wordpress">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Wordpress</h3>
-          <h2 class="mb-5">Recent Experience</h2>
-        </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6" id="modern-in-denver">
-              <a class="portfolio-item" href="https://www.modernindenver.com/" target="_blank">
-                <span class="caption">
-                  <span class="caption-content" id="modern-text">
-                    <h2>Modern In Denver</h2>
-                    <p class="mb-0">Colorado's Design Magazine</p>
-                  </span>
-                </span>
-                <img id="mid-img" class="img-fluid" src="img/MID1.png" alt="">
-              </a>
-            </div>
-
-            <div class="col-lg-6" id="ikigai-movement">
-              <a class="portfolio-item" href="https://www.ikigaimovement.com/" target="_blank">
-                <span class="caption">
-                  <span class="caption-content" id="ikigai-text">
-                    <h2>Ikigai Movement, LLC</h2>
-                    <p class="mb-0">Redefining Succes (In Progress)</p>
-                  </span>
-                </span>
-                <img class="img-fluid" src="img/Ikigai.jpg" alt="">
-              </a>
-            </div>
-        </div>
+  <!-- Call to Action -->
+  <section id="pizza"
+    class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <img id="hungry"
+        src="./img/hungryBlack.gif" />
+      <h4>Here are a few of my favorite local spots:</h4>
+      <br>
+      <div id="pizza-icon1">
+        <a href="https://bluepandenver.com/"
+          target="_blank">
+          <img src="./img/pizza.png" />
+        </a>
       </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section id="pizza" class="content-section bg-primary text-white">
-      <div class="container text-center">
-        <img id="hungry" src="./img/hungryBlack.gif" />
-        <h4>Here are a few of my favorite local spots:</h4>
-        <br>
-        <div id="pizza-icon1">
-          <a href="https://bluepandenver.com/" target="_blank">
-            <img src="./img/pizza.png" />
-          </a>
-        </div>
-        <div id="pizza-icon2">
-          <a href="http://www.marquispizza.com/" target="_blank">
-            <img src="./img/pizza.png" />
-          </a>
-        </div>
-        <div id="pizza-icon3">
-          <a href="https://pizzerialocale.com/home" target="_blank">
-            <img src="./img/pizza.png" />
-          </a>
-        </div>
-        <div id="pizza-text">
-          <span id="marquis">
-            <h4>
-                Marquis Theater
-            </h4>
-            <h6>
-              Classic NY Style
-            </h6>
-          </span>
-          <span id="bluepan">
-            <h4>
-                Blue Pan
-            </h4>
-            <h6>
-              Detroit Deep Dish
-            </h6>
-          </span>
-          <span id="locale">
-            <h4>
-                Pizzeria Locale
-            </h4>
-            <h6>
-              Fast-Casual & Made to Order
-            </h6>
-          </span>
-        </div>
+      <div id="pizza-icon2">
+        <a href="http://www.marquispizza.com/"
+          target="_blank">
+          <img src="./img/pizza.png" />
+        </a>
       </div>
-    </section>
+      <div id="pizza-icon3">
+        <a href="https://pizzerialocale.com/home"
+          target="_blank">
+          <img src="./img/pizza.png" />
+        </a>
+      </div>
+      <div id="pizza-text">
+        <span id="marquis">
+          <h4>
+            Marquis Theater
+          </h4>
+          <h6>
+            Classic NY Style
+          </h6>
+        </span>
+        <span id="bluepan">
+          <h4>
+            Blue Pan
+          </h4>
+          <h6>
+            Detroit Deep Dish
+          </h6>
+        </span>
+        <span id="locale">
+          <h4>
+            Pizzeria Locale
+          </h4>
+          <h6>
+            Fast-Casual & Made to Order
+          </h6>
+        </span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Map -->
-    <section id="contact" class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6135.66580888417!2d-105.00034564086972!3d39.7434041471321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78ce3efb4289%3A0xb38e0b01c66533b6!2sThe+Commons+on+Champa!5e0!3m2!1sen!2sus!4v1531232251002" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <br/>
+  <!-- Map -->
+  <section id="contact"
+    class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.1406094170816!2d-104.9861852!3d39.75895129999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78e0049f139f%3A0x13aa9b312d70c5db!2sGreen+Spaces!5e0!3m2!1sen!2sus!4v1553274448668"
+      width="800"
+      height="600"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen></iframe>
+    <br />
     <!--   <small>
         <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
       </small> -->
-    </section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/maxwellcutri/" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3"
+            href="https://www.linkedin.com/in/maxwellcutri/"
+            target="_blank">
+            <i class="fa fa-linkedin"
+              aria-hidden="true"></i>
 
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://stackoverflow.com/users/9182384/maxwell-cutri" target="_blank">
-              <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/Mpcutri" target="_blank">
-              <i class="icon-social-github"></i>
-            </a>
-          </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Maxwell Cutri 2018</p>
-      </div>
-    </footer>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3"
+            href="https://stackoverflow.com/users/9182384/maxwell-cutri"
+            target="_blank">
+            <i class="fa fa-stack-overflow"
+              aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white"
+            href="https://github.com/Mpcutri"
+            target="_blank">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Maxwell Cutri 2019</p>
+    </div>
+  </footer>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger"
+    href="#page-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
-    <!-- Materialize -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- Materialize -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.js"></script>
 
-  </body>
+</body>
 
 </html>

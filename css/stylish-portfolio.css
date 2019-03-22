@@ -9,7 +9,9 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Source Sans Pro'; }
+  font-family: 'Source Sans Pro';
+  overflow-x: hidden;
+}
 
 #developer {
     background-color: rgba(36,41,46,0.5);
